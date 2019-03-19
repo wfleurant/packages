@@ -24,7 +24,6 @@ define Package/yggdrasil
 	TITLE:=Yggdrasil supports end-to-end encrypted IPv6 networks
 	URL:=https://yggdrasil-network.github.io/
 	DEPENDS:=$(GO_ARCH_DEPENDS) @IPV6 +kmod-tun +@(mips):KERNEL_MIPS_FPU_EMULATOR
-	PKGARCH:=all
 endef
 
 define Package/yggdrasil/description
