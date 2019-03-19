@@ -81,7 +81,8 @@ define Build/Compile
 	cd $(PKG_BUILD_DIR) && \
 	GOOS="linux" \
 	GOARCH="$(GOARCH)" \
-	PKGVER="$(PKG_SOURCE_VERSION)-openwrt" \
+	PKGVER="$(PKG_VERSION)" \
+	PKGNAME="yggdrasil-openwrt" \
 	$(PKG_BUILD_DIR)/build
 endef
 
